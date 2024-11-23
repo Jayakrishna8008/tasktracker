@@ -1,38 +1,200 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bgCard{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 30px;
+}
+h1{
+  font-family: 'Courier New', Courier, monospace,sans-serif;
+  font-weight: 500;
+  font-size:57px;
+  font-style: calc();
+}
+input{
+  margin-right:20px;
+  padding:10px;
+  width:250px;
+  border-radius: 9px;
+  border:0.1px solid gray;
+}
+.form-container{
+  display: flex;
+}
+select{
+  margin-right:20px;
+  padding:10px;
+  width:250px;
+  border:0.1px solid gray;
+}
+button{
+  height:40px;
+  width:100px;
+  border-radius:12px;
+  background-color: red;
+  border: none;
+  color:#fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:bold;
+  font-size:20px;
+}
+.select{
+  margin-top:30px;
+  border:0.1px solid gray;
+
+}
+table {
+  width:80%;
+  border-collapse:collapse;
+  margin:20px 0px;
+  font-size:16px;
+  text-align: left;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding:30px;
 }
 
-.App-link {
-  color: #61dafb;
+thead tr{
+  padding:10px;
+  background-color:#ede6e6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+td{
+  padding:10px;
+  background-color:#f2f2f2;
+}
+.table-button{
+  margin-right:10px;
+}
+
+@media (max-width:576px){
+  .form-container{
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .select-form{
+    display: flex;
+    flex-direction: column;
+  }
+  h1{
+    font-family: 'Courier New', Courier, monospace,sans-serif;
+    font-weight: 300;
+    font-size:27px;
+    font-style: calc();
+  }
+  input{
+    margin-bottom:10px;
+    padding:10px;
+    width:180px;
+    border-radius: 7px;
+    border:0.1px solid gray;
+  }
+  .form-container{
+    display: flex;
+  }
+  select{
+    margin-bottom:10px;
+    padding:10px;
+    width:180px;
+    border:0.1px solid gray;
+  }
+  button{
+    height:30px;
+    width:70px;
+    border-radius:12px;
+    background-color: red;
+    border: none;
+    color:#fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    font-size:10px;
+  }
+  .select{
+    margin-top:15px;
+    border:0.1px solid gray;
+    margin-left:0px;
+  
+  }
+  table {
+    width:80%;
+    border-collapse:collapse;
+    margin:20px 0px;
+    font-size:16px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding:30px;
+  }
+  
+  thead tr{
+    padding:10px;
+    background-color:#ede6e6;
+    font-size:10px;
+  }
+  
+  td{
+    padding:10px;
+    background-color:#f2f2f2;
+  }
+  .table-button{
+    margin-bottom:10px;
+    font-size:10px;
+    height:25px;
+  }
+  tbody tr td{
+    font-size:10px;
+  }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+  input,select{ 
+    width:130px;
+   }
+   .select-form{
+    display: flex;
+   }
+   .form-container{
+    display: flex;
+  }
+  .table-button{
+    margin-bottom:10px;
+    font-size:10px;
+    height:25px;
+  }
+  tbody tr td{
+    font-size:10px;
+  }
+  thead tr{
+    padding:10px;
+    background-color:#ede6e6;
+    font-size:10px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1300px) {
+  input,select{ 
+    width:160px;
+   }
+   .select-form{
+    display: flex;
+   }
+   .form-container{
+    display: flex;
+  }
+  .table-button{
+    margin-top:10px;
+    font-size:10px;
+    height:25px;
+  }
+  tbody tr td{
+    font-size:10px;
+  }
+  thead tr{
+    padding:10px;
+    background-color:#ede6e6;
+    font-size:10px;
   }
 }
